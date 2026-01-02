@@ -2,49 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Landing Page</title>
+    <title>Web Hosting Services</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <header class="navbar">
-        <h1 class="logo">MyBrand</h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#features">Features</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<!-- Navbar -->
+<header class="navbar">
+    <h1 class="logo">HostPro</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#plans">Plans</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <h2>Welcome to Our Landing Page</h2>
-        <p>We help you grow your business with modern solutions.</p>
-        <button onclick="showMessage()">Get Started</button>
-    </section>
+<!-- Hero Section -->
+<section class="hero">
+    <h2>Fast & Secure Web Hosting</h2>
+    <p>Powerful hosting solutions for your websites</p>
+    <button onclick="orderNow()">Get Hosting</button>
+</section>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <h2>Our Features</h2>
-        <div class="feature-box">
-            <div class="card">Fast</div>
-            <div class="card">Secure</div>
-            <div class="card">Reliable</div>
+<!-- Hosting Plans -->
+<section class="plans" id="plans">
+    <h2>Hosting Plans</h2>
+    <div class="plan-box">
+
+        <div class="plan">
+            <h3>Basic</h3>
+            <p class="price">₹199/month</p>
+            <ul>
+                <li>10 GB SSD Storage</li>
+                <li>1 Website</li>
+                <li>Free SSL</li>
+            </ul>
+            <button onclick="selectPlan('Basic')">Choose Plan</button>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: support@mybrand.com</p>
-    </section>
+        <div class="plan popular">
+            <h3>Standard</h3>
+            <p class="price">₹399/month</p>
+            <ul>
+                <li>50 GB SSD Storage</li>
+                <li>5 Websites</li>
+                <li>Free Domain</li>
+            </ul>
+            <button onclick="selectPlan('Standard')">Choose Plan</button>
+        </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 MyBrand. All rights reserved.</p>
-    </footer>
+        <div class="plan">
+            <h3>Premium</h3>
+            <p class="price">₹699/month</p>
+            <ul>
+                <li>Unlimited Storage</li>
+                <li>Unlimited Websites</li>
+                <li>24/7 Support</li>
+            </ul>
+            <button onclick="selectPlan('Premium')">Choose Plan</button>
+        </div>
 
-    <script src="script.js"></script>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="features" id="features">
+    <h2>Why Choose Us?</h2>
+    <div class="feature-box">
+        <div class="feature">99.9% Uptime</div>
+        <div class="feature">Free SSL</div>
+        <div class="feature">Fast Servers</div>
+        <div class="feature">24/7 Support</div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@hostpro.com</p>
+    <p>Phone: +91 98765 43210</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 HostPro Hosting. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
